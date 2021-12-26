@@ -1,0 +1,150 @@
+header{
+    position: fixed;
+    width: 100%;
+    
+    z-index: 1;
+}
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+
+    background-color: $gray-dark;
+    color: $font-white;
+}
+
+.title{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+
+    background-color: $white-normal;
+    color: $gray-dark;
+}
+
+
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+//========
+//==HERO==
+//========
+
+.hero{
+
+    height: 100%;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 260px 0;
+}
+
+.hero-desc{
+    margin: 0 auto;
+    
+    line-height: 196%;
+    color: $font-white;  
+}
+
+@media screen and (max-width: 1220px){
+    .hero-desc{
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width: 960px){
+    .hero-desc{
+        text-align: center;
+        
+    }
+}
+
+.hero-desc h1{
+    margin-bottom: 18px;  
+}
+
+
+//================
+//===HIGHLIGHTS===
+//================
+
+.highlights{
+    padding: 58px 0;
+    text-align: center;
+    line-height: 196%;
+}
+
+.highlights h1{
+    line-height: 196%;
+}
+
+.shoes{
+    padding: 60px 0;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1220px){
+    .shoes{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-areas: 
+        "shoes card"
+        ;
+        
+    }
+}
+
+@media screen and (max-width: 960px){
+    .shoes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 302px;
+    background-color: $white-dark;
+    margin-bottom: 38px;
+    
+    cursor: pointer;
+
+
+}
+
+
+
+//============
+//===FOOTER===
+//============
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    background-color: $gray-dark;
+    color: $font-white;
+}
